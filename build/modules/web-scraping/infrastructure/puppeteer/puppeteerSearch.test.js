@@ -36,8 +36,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var url_1 = require("../../../domain/url");
-var searchRepo_1 = require("./searchRepo");
+var url_1 = require("../../domain/url");
+var puppeteerSearch_1 = require("./puppeteerSearch");
 test("should execute search successfully", function () { return __awaiter(void 0, void 0, void 0, function () {
     var baseURL, queryKey, queryValue, toBeMatchedKey, toBeMatchedValue, queryParams, urlProps, url, searchRepo, result;
     return __generator(this, function (_a) {
@@ -54,7 +54,7 @@ test("should execute search successfully", function () { return __awaiter(void 0
                     queryParams: queryParams
                 };
                 url = url_1.Url.create(urlProps);
-                searchRepo = new searchRepo_1.SearchRepo();
+                searchRepo = new puppeteerSearch_1.SearchRepo();
                 return [4 /*yield*/, searchRepo.executeSearch(url)];
             case 1:
                 result = _a.sent();
@@ -63,4 +63,4 @@ test("should execute search successfully", function () { return __awaiter(void 0
         }
     });
 }); }, 10000);
-//# sourceMappingURL=searchRepo.test.js.map
+//# sourceMappingURL=puppeteerSearch.test.js.map

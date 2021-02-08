@@ -1,7 +1,7 @@
-import { ISearchRepo } from "../../searchRepo";
-import { Url } from "../../../domain/url";
-import { SearchResult, SearchResultProps } from "../../../domain/searchResult";
-import { puppeteerPage } from "../../../../../shared/infrastructure/browser";
+import { ISearchRepo } from "../../repository/searchRepo";
+import { Url } from "../../domain/url";
+import { SearchResult, SearchResultProps } from "../../domain/searchResult";
+import { puppeteerPage } from "../../../../shared/infrastructure/browser";
 
 export class SearchRepo implements ISearchRepo {
     constructor() {

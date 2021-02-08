@@ -1,4 +1,4 @@
-import { SearchRepo } from "./implementations/puppeteer/searchRepo";
+import { SearchRepo } from "../infrastructure/puppeteer/puppeteerSearch";
 
 const searchRepo = new SearchRepo();
 

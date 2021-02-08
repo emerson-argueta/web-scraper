@@ -1,5 +1,5 @@
-import { Url, UrlProps } from "../../../domain/url"
-import { SearchRepo } from "./searchRepo"
+import { Url, UrlProps } from "../../domain/url"
+import { SearchRepo } from "./puppeteerSearch"
 
 test("should execute search successfully", async () => {
     const baseURL = "https://www.google.com/search"

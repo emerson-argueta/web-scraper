@@ -37,8 +37,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SearchRepo = void 0;
-var searchResult_1 = require("../../../domain/searchResult");
-var browser_1 = require("../../../../../shared/infrastructure/browser");
+var searchResult_1 = require("../../domain/searchResult");
+var browser_1 = require("../../../../shared/infrastructure/browser");
 var SearchRepo = /** @class */ (function () {
     function SearchRepo() {
     }
@@ -70,4 +70,4 @@ var SearchRepo = /** @class */ (function () {
     return SearchRepo;
 }());
 exports.SearchRepo = SearchRepo;
-//# sourceMappingURL=searchRepo.js.map
+//# sourceMappingURL=puppeteerSearch.js.map
