@@ -98,8 +98,8 @@ var BaseController = /** @class */ (function () {
     BaseController.prototype.tooMany = function (res, message) {
         return BaseController.jsonResponse(res, 429, message ? message : 'Too many requests');
     };
-    BaseController.prototype.todo = function (res) {
-        return BaseController.jsonResponse(res, 400, 'TODO');
+    BaseController.prototype.badRequest = function (res) {
+        return BaseController.jsonResponse(res, 400, 'The server could not understand the request due to invalid syntax.');
     };
     BaseController.prototype.fail = function (res, error) {
         console.log(error);

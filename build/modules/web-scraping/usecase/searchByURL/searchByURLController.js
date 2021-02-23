@@ -65,8 +65,11 @@ var SearchByURLController = /** @class */ (function (_super) {
             return __generator(this, function (_c) {
                 switch (_c.label) {
                     case 0:
+                        if (!req.body.baseURL) {
+                            this.badRequest(res);
+                        }
                         baseURL = req.body.baseURL;
-                        queryParams = new Map(Object.entries(req.body.queryParams));
+                        queryParams = new Map(Object.entries(req.body.queryParams || {}));
                         dto = {
                             baseURL: baseURL,
                             queryParams: queryParams

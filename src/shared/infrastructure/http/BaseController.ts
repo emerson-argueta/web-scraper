@@ -59,8 +59,8 @@ export abstract class BaseController {
         return BaseController.jsonResponse(res, 429, message ? message : 'Too many requests');
     }
 
-    public todo(res: express.Response) {
-        return BaseController.jsonResponse(res, 400, 'TODO');
+    public badRequest(res: express.Response) {
+        return BaseController.jsonResponse(res, 400, 'The server could not understand the request due to invalid syntax.');
     }
 
     public fail(res: express.Response, error: Error | string) {
