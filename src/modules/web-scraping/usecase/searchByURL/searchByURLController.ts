@@ -13,7 +13,7 @@ export class SearchByURLController extends BaseController {
 
     async executeImpl(req: express.Request, res: express.Response): Promise<any> {
         if (!req.body.baseURL) {
-            this.badRequest(res)
+            return this.badRequest(res)
         }
         const baseURL = req.body.baseURL;
         const queryParams: Map<string, string> = new Map(Object.entries(req.body.queryParams || {}));

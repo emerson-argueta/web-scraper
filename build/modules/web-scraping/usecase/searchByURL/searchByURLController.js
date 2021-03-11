@@ -66,7 +66,7 @@ var SearchByURLController = /** @class */ (function (_super) {
                 switch (_c.label) {
                     case 0:
                         if (!req.body.baseURL) {
-                            this.badRequest(res);
+                            return [2 /*return*/, this.badRequest(res)];
                         }
                         baseURL = req.body.baseURL;
                         queryParams = new Map(Object.entries(req.body.queryParams || {}));
